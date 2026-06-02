@@ -1,0 +1,13 @@
+# Environment Files
+.env
+.env.*
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+
+# Terraform
+.terraform/
+terraform.tfstate
