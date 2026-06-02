@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["node","-e","console.log('Frontend Container Running')"]
+CMD ["python","-c","console.log('ML service Container Running')"]
