@@ -3,4 +3,4 @@ services:
     build: ./backend
 
   ml-service:
-    build: ./ml-service
+    build: ./ml-services
