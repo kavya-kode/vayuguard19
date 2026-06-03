@@ -1,2 +1,2 @@
 FROM alpine
-CMD ["echo", "ML Service Ready"]
+CMD ["echo", "Backend Ready"]
