@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  backend:
+    build: ./backend
+    container_name: vayuguard-backend
+
+  ml-service:
+    build: ./ml-service
+    container_name: vayuguard-ml
+
+  mongodb:
+    image: mongo:7
+    container_name: vayuguard-mongo
+    ports:
+      - "27017:27017"
