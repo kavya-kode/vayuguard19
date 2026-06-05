@@ -1,8 +1,21 @@
 services:
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+
   backend:
     build: ./backend
+    ports:
+      - "8081:80"
 
   ml-service:
     build: ./ml-services
- data-pipeline:
+    ports:
+      - "8082:80"
+
+  data-pipeline:
     build: ./data-pipeline
+    ports:
+      - "8083:80"
