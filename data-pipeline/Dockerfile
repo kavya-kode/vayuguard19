@@ -1,3 +1,5 @@
-FROM alpine
+FROM nginx:latest
 
-CMD ["echo", "Data Pipeline Ready"]
+RUN echo "<h1>VayuGuard Data Pipeline</h1>" > /usr/share/nginx/html/index.html
+
+EXPOSE 80
